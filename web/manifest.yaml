@@ -1,0 +1,30 @@
+apiversion: v1
+kind: pod
+metadata:
+  name: web
+  labels:
+    name: web
+    tier: frontend
+spec:
+  containers:
+  -name: web
+  image: richeb/web:k8
+  ports:
+    -containerPort: 80
+---
+
+apiversion: v1
+kind: service
+metadata:
+  name: web-service
+spec:
+  type: LoadBalancer
+  selector:
+    name: web
+    tier: frontend
+  ports:
+    -protocol: TCP
+    port: 80
+    targetport: 80
+
+    

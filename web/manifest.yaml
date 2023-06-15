@@ -9,6 +9,7 @@ metadata:
 spec:
   containers:
   -name: web
+  imagePullPolicy: always
   image: richeb/web:k8
   ports:
     -containerPort: 80
@@ -24,7 +25,7 @@ spec:
     tier: frontend
   ports:
     -protocol: TCP
-    port: 80
-    targetport: 80
+    port: 80            # Load Balancer port
+    targetport: 80      # Container port we mentioned above
 
     

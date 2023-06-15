@@ -26,7 +26,7 @@ spec:
   containers:
   - name: web
     imagePullPolicy: Always
-    image: richeb/web:k8
+    image: richeb/web:v8
     ports:
     - containerPort: 80
 ---

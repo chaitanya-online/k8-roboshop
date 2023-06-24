@@ -26,7 +26,7 @@ metadata:
 spec:
   containers:
   - name: mysql
-    imagePullPolicy: always
+    imagePullPolicy: Always
     image: richeb/mysql:v1
     envFrom:
     - configMapRef:

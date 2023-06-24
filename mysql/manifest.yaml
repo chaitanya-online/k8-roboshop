@@ -30,9 +30,9 @@ spec:
     image: richeb/mysql:v1
     envFrom:
     - configMapRef:
-      name: mysql-config-map
+        name: mysql-config-map
     - secretRef:
-      name: mysql-secret
+        name: mysql-secret
     ports:
      - containerPort: 3306
 ---

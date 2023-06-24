@@ -8,7 +8,7 @@ data:
   MYSQL_DATABASE: "cities"
 ---
 apiVersion: v1
-kind: secret
+kind: Secret
 metadata:
   name: mysql-secret
 type: Opaque

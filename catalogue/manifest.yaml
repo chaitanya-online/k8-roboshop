@@ -35,7 +35,7 @@ spec:
     imagePullPolicy: Always
     image: richeb/catalogue:k8-1
     envFrom:
-    -configMapRef:
+    - configMapRef:
       name: catalogue-config-map
 ---
 apiVersion: v1

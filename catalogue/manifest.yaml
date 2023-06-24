@@ -36,7 +36,7 @@ spec:
     image: richeb/catalogue:k8-1
     envFrom:
     - configMapRef:
-      name: catalogue-config-map
+        name: catalogue-config-map
 ---
 apiVersion: v1
 kind: Service

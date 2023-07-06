@@ -34,7 +34,7 @@ spec:
   containers:
   - name: shipping
     imagePullPolicy: Always
-    image: richeb/shipping:k8
+    image: richeb/shipping:v1
     envFrom:
     - configMapRef:
         name: shipping-config-map
